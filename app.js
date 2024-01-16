@@ -147,6 +147,10 @@ app.get('/restaurantes/:tipoComida', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 // Iniciar el servidor
 const PORT = 3000;
 app.listen(PORT, () => {
