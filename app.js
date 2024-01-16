@@ -137,11 +137,11 @@ app.get('/restaurantes/:tipoComida', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello Restaurants!')
 })
 
 // Iniciar el servidor
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en el puerto ${PORT}`);
+// const PORT = 10000;
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
 });
