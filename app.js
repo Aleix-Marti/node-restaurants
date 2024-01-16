@@ -9,17 +9,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// const conn = 'mongodb+srv://aleixmarti:ZpMm086srH2R0mzm@cluster0.7lu1qqu.mongodb.net/'
-
-
-// // Conexión a la base de datos MongoDB Atlas
-// mongoose.connect('URL_de_tu_base_de_datos', { useNewUrlParser: true, useUnifiedTopology: true })
-//   .then(() => console.log('Conexión exitosa a MongoDB'))
-//   .catch(err => console.error('Error de conexión a MongoDB:', err));
-
-// // Connexió a la base de dades
-// // mongoose.connect('mongodb://localhost:27017/nom-de-la-teva-base-de-dades', { useNewUrlParser: true, useUnifiedTopology: true });
-
 const connectionParams={
     // useNewUrlParser: true,
     // useCreateIndex: true,
